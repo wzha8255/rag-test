@@ -6,9 +6,9 @@ from langchain.vectorstores import FAISS
 from langchain.chains.question_answering import load_qa_chain
 from langchain.llms import OpenAI 
 import tempfile
-from dotenv import load_dotenv
 
-load_dotenv()
+
+openai_api_key = st.secrets["OPENAI_API_KEY"]
 
 
 st.set_page_config(layout="wide")
